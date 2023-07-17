@@ -14,16 +14,16 @@ function getData(queryString) {
 
 function drawGID() {
   var queryString = encodeURIComponent("SELECT A, B, C, D, E, F, G, H");
-  console.log(queryString);
   getData(queryString);
 
   // повторить с интервалом 2 секунды
-  let timerId = setInterval(() => getData(queryString), 5000);
+  //let timerId = setInterval(() => getData(queryString), 5000);
   // остановить вывод через 5 секунд
-  setTimeout(() => {
+  /*setTimeout(() => {
     clearInterval(timerId);
     console.log("stop");
   }, 1000000);
+  */
 }
 
 function handleSampleDataQueryResponse(response) {
